@@ -1,0 +1,76 @@
+@import url('../../reset.css');
+
+.campo {
+    display: flex;
+    flex-direction: row;
+    width: 585px;
+    height: 75px;
+
+
+    background: #FFFFFF;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06)
+}
+
+.campo_assinar {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    width: 194px;
+    height: 75px;
+
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+
+    color: #FFFFFF;
+    border: none;
+
+    background: #FFCB47;
+    box-shadow: 10px 10px 30px rgba(255, 203, 71, 0.3);
+}
+
+.campo_assinar:active{
+    border: 1px solid rgba(0, 0, 0, 0.178);
+}
+
+.campo_email {
+    padding-left: 40px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #202020;
+
+    border: none;
+    width: 391px;
+}
+
+.campo_email::placeholder {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #202020;
+
+    opacity: 0.3;
+}
+
+
+.campo_imagem {
+    display: flex;
+    position: relative;
+    left: 40px;
+    height: 16px;
+    width: 16px;
+    margin: auto 0;
+    margin-right: 10px;
+}
