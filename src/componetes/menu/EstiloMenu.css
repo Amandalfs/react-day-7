@@ -1,0 +1,54 @@
+@import url('../../reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Nanum+Myeongjo&display=swap');
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    width: 1203px;
+    height: 48.84px;
+
+    justify-content: space-between;
+
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.menu_navegacao {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 38px;
+}
+
+.nav_lista {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 15px;
+}
+
+.menu_imagem {
+    width: 177px;
+    height: 44.84px;
+}
+
+.nav_lista p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #202020;
+}
+
+.nav_carrinho p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #202020;
+
+}
