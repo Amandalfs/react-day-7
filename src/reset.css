@@ -10,5 +10,7 @@
 body {
     background-color: aliceblue;
     color: black;
-    width: 1281px;
+    max-width: 2100px;
+    width: 1920px;
+    border: 2px solid black;
 }
