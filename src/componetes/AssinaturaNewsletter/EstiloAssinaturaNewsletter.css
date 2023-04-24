@@ -1,4 +1,5 @@
 @import url('../../reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Nanum+Myeongjo&display=swap');
 
 .hero {
     display: flex;
@@ -8,7 +9,7 @@
 
 
 
-.hero h2 {
+.sub-title_newsletter {
     width: 181px;
     height: 27px;
 
@@ -23,7 +24,7 @@
     opacity: 0.5;
 }
 
-.hero h1 {
+.title_newsletter {
     width: 375px;
     height: 188px;
 
@@ -36,7 +37,7 @@
     color: #202020;
 }
 
-.hero p {
+.text_newsletter {
     width: 481px;
     height: 99px;
 
@@ -123,7 +124,7 @@
 .campo_imagem {
     display: flex;
     position: relative;
-    left: 40px;
+    right: 550px;
     height: 16px;
     width: 16px;
     margin: auto 0;
