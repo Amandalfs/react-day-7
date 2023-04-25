@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import{ api} from '../../../axios';
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -11,6 +12,9 @@ import'../menu/EstiloMenu.css';
 import email  from '../../assets/mail.png';
 import arvore from '../../assets/imagem-hero.png';
 import amarelo from '../../assets/anomalia.png'
+
+
+
 
 export default function AssinaturaNewsletter(){
     const [emailValido, setEmaiValido] = useState();
@@ -31,6 +35,34 @@ export default function AssinaturaNewsletter(){
 
     function enviarSMS(){
         if(valido){
+            async function enviarEmail(){
+                const nome = emailValido.split("@")[0]
+                try {
+                    const response = await api.post('/send', {
+                        "emailReceive": emailValido,
+                        "titulo": "Voce assinou o Newsletter da CasaVerde",
+                        "texto": `<p>
+                        Olá, ${nome}.
+                        <br>
+                        Boas-vindas à Casa Verde! Você se cadastrou em 
+                        <br>
+                        nossa newsletter e vai começar a receber e-mails 
+                        <br>
+                        com as novidades de nossa loja e dicas de como 
+                        <br>
+                        cuidar de suas plantas.
+                        <br>
+                        Até logo!
+                        </p>`
+                    })
+                    console.log(response);
+                } catch (error) {
+                    console.log(error)
+                }
+               
+                
+            }   
+            enviarEmail();
             toast.info(`Obrigado pela sua assinatura, você receberá nossas novidades no e-mail ${emailValido}`)
         }
     }
