@@ -11,4 +11,6 @@ body {
     background-color: aliceblue;
     color: black;
     width: 1920px;
+    border: 1px solid black;
 }
+

@@ -1,0 +1,9 @@
+.cointainer-infos {
+    display: flex;
+    flex-direction: row;
+    margin: 0 400px;
+}
+
+/* .infos-imagem {
+
+} */

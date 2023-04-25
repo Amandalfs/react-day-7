@@ -62,7 +62,6 @@
     width: 585px;
     height: 75px;
 
-
     background: #FFFFFF;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06)
 }
@@ -123,19 +122,25 @@
 
 .campo_imagem {
     display: flex;
-    position: relative;
-    right: 550px;
+    position: absolute;
+  
     height: 16px;
     width: 16px;
-    margin: auto 0;
-    margin-right: 10px;
+
+    margin-left: 12px;
+    margin-top: 30px;
+}
+
+.imagens-background {
+    position: absolute;
+    
 }
 
 .background-arvore {
     position: relative;
     z-index: -1;
-    left: 800px;
-    top: -539px;
+    left: 740px;
+    top: -650px;
 
 }
 

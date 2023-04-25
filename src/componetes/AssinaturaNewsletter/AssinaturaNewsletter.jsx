@@ -90,8 +90,12 @@ export default function AssinaturaNewsletter(){
                 <img className='campo_imagem' src={email} alt="" />
             </div>
         </section>
-        <img src={arvore} className='background-arvore' alt="" />
-        <img src={amarelo} className='background-amarelo' alt="" />
+        <div className='imagens-background'>
+            <img src={arvore} className='background-arvore' alt="" />
+            <img src={amarelo} className='background-amarelo' alt="" />
+        </div>
+        
+        
         </>
     )
 }
