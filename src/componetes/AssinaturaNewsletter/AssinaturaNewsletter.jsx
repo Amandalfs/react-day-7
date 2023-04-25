@@ -95,8 +95,6 @@ export default function AssinaturaNewsletter(){
             <img src={arvore} className='background-arvore' alt="" />
             <img src={amarelo} className='background-amarelo' alt="" />
         </div>
-        
-        
         </>
     )
 }
