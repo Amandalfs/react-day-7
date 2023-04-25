@@ -1,8 +1,8 @@
 import'./componetes/AssinaturaNewsletter/EstiloAssinaturaNewsletter.css';
 import AssinaturaNewsletter from './componetes/AssinaturaNewsletter/AssinaturaNewsletter';
 
-import './componetes/infos/EstiloInfos.css'
-import Infos from './componetes/infos/Infos';
+import './componetes/Infos/EstiloInfos.css'
+import Infos from './componetes/Infos/Infos';
 
 
 function App() {
