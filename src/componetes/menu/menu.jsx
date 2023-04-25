@@ -29,8 +29,8 @@ export default function Menu(){
                             <p>Meu carrinho</p>    
                         </div>
                 </nav>
-               
             </header>
         </>
     )
 }
+
