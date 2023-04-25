@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <AssinaturaNewsletter/>
-{/*       <Infos/> */}
+      <Infos/>
     </>
   )
 }
