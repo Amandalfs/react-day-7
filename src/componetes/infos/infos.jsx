@@ -1,6 +1,6 @@
 import './EstiloInfos.css'
 
-import folhaInfos from '../../assets/folhasinfos.png'
+import folhaInfos from '../../assets/folhasInfos.png'
 import circulo from '../../assets/Ellipse.png'
 
 export default function Infos(){
