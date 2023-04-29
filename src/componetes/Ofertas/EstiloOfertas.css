@@ -1,0 +1,91 @@
+@import url('../../reset.css');
+
+.ofertas-header {
+    height: 133px;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 44px;
+}
+
+.ofertas-header h2 {
+    margin-bottom: 12px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+
+    text-align: center;
+
+    color: #202020;
+
+    opacity: 0.5;
+}
+
+.ofertas-header h1 {
+    font-family: 'Elsie Swash Caps';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 82px;
+    line-height: 94px;
+    text-align: center;
+
+    color: #202020;
+}
+
+.amostra {
+    display: flex;
+    flex-wrap: wrap;
+    height: 430px;
+    width: 1200px;
+    margin: 0 auto;
+
+    gap: 30px;
+}
+
+.produto {
+    display: flex;
+    flex-direction: row;
+}
+
+.produto_imagem {
+    height: 200px;
+}
+
+.produto_Descricao {
+
+}
+
+.produto_Descricao h1 {
+    width: 121px;
+    height: 74px;
+
+    margin-top: 27px;
+    margin-bottom: 8px;
+
+    font-family: 'Elsie Swash Caps';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 37px;
+
+    color: #202020;
+}
+
+.produto_Descricao h2 {
+    margin-bottom: 24px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #202020;
+
+    opacity: 0.5;
+}
