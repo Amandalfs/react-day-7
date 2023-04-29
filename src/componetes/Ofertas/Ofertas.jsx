@@ -1,81 +1,27 @@
-import BtnComprar from "../BtnComprar/BtnComprar";
-
-import imgProduto from '../../assets/produto-01.png'
+import Produto from "../Produto/Produto";
+import { apiProdutos } from "../../../axios";
+import { useEffect, useState } from "react";
 
 export default function Ofertas(){
+    const [Produtos, SetProdutos] = useState([]);
+    async function consumirProdutos(){
+        const Result = await apiProdutos.get('bugan/41d60ffa23fa0c4044cc138bf670780d/raw')
+        SetProdutos(Result.data);
+    }
+    useEffect(()=>{
+        consumirProdutos();
+    })
     return (<>
         <header className="ofertas-header">
             <h2>Conheça nossas</h2>
             <h1>ofertas</h1>
         </header>
         <main className="amostra">
-            <div className="produto">
-                <img className="produto_imagem" src={imgProduto} alt="" />
-                <div className="produto_Descricao">
-                    <h1>
-                        Ajuga
-                        reptans
-                    </h1>
-                    <h2>R$ 20,00</h2>
-                    <BtnComprar/>
-                </div>
-            </div>
-            <div className="produto">
-                <img className="produto_imagem" src={imgProduto} alt="" />
-                <div className="produto_Descricao">
-                    <h1>
-                        Ajuga
-                        reptans
-                    </h1>
-                    <h2>R$ 20,00</h2>
-                    <BtnComprar/>
-                </div>
-            </div>
-            <div className="produto">
-                <img className="produto_imagem" src={imgProduto} alt="" />
-                <div className="produto_Descricao">
-                    <h1>
-                        Ajuga
-                        reptans
-                    </h1>
-                    <h2>R$ 20,00</h2>
-                    <BtnComprar/>
-                </div>
-            </div>
-            <div className="produto">
-                <img className="produto_imagem" src={imgProduto} alt="" />
-                <div className="produto_Descricao">
-                    <h1>
-                        Ajuga
-                        reptans
-                    </h1>
-                    <h2>R$ 20,00</h2>
-                    <BtnComprar/>
-                </div>
-            </div>
-            <div className="produto">
-                <img className="produto_imagem" src={imgProduto} alt="" />
-                <div className="produto_Descricao">
-                    <h1>
-                        Ajuga
-                        reptans
-                    </h1>
-                    <h2>R$ 20,00</h2>
-                    <BtnComprar/>
-                </div>
-            </div>
-            <div className="produto">
-                <img className="produto_imagem" src={imgProduto} alt="" />
-                <div className="produto_Descricao">
-                    <h1>
-                        Ajuga
-                        reptans
-                    </h1>
-                    <h2>R$ 20,00</h2>
-                    <BtnComprar/>
-                </div>
-            </div>
-            
+            {
+                 Produtos.map((prod, indice)=>{
+                   return <Produto name={prod.name} price={prod.preco} key={indice++} imagem={prod.imagem} />
+                })
+            }
         </main>
     </>)
 }

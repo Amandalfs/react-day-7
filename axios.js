@@ -8,3 +8,11 @@ export const api = axios.create({
   timeout: 10000,
   headers: {'X-Custom-Header': 'foobar'}
 });
+
+export const apiProdutos = axios.create({
+  baseURL: import.meta.env.VITE_URL_Produtos,
+  timeout: 10000,
+  headers: {
+    'Content-Type': 'application/json'
+}
+})
