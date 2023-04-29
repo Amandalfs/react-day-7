@@ -1,0 +1,38 @@
+.produto {
+    display: flex;
+    flex-direction: row;
+}
+
+.produto_imagem {
+    height: 220px;
+}
+
+.produto_Descricao h1 {
+    width: 121px;
+    height: 74px;
+
+    margin-top: 27px;
+    margin-bottom: 8px;
+
+    font-family: 'Elsie Swash Caps';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 37px;
+
+    color: #202020;
+}
+
+.produto_Descricao h2 {
+    margin-bottom: 24px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #202020;
+
+    opacity: 0.5;
+}
