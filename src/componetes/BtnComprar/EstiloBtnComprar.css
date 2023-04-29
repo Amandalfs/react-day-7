@@ -1,0 +1,21 @@
+@import url('../../reset.css');
+
+.btnComprar {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    border: none;
+}
+
+.btnComprar {
+    padding: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFCB47;
+}
+.btnComprar img {
+    margin-top: 5px;
+}
